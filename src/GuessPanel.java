@@ -73,7 +73,19 @@ public class GuessPanel extends JPanel {
     }
 
     private void checkGuess() {
-        int guessedNumber = Integer.parseInt(guessField.getText());
+
+        String guessedText = guessField.getText().trim();
+        if (guessedText.isEmpty()) {
+            messageLabel.setText("Please enter a valid input!");
+        }
+        int guessedNumber;
+        try {
+            guessedNumber = Integer.parseInt(guessedText);
+        } catch (NumberFormatException e) {
+            // Show a message to the user that the input is not a valid number
+            messageLabel.setText("Invalid input. Please enter a valid number.");
+            return; // Exit the method without further processing
+        }
 
         if (guessedNumber == quizGame.getTargetNumber()) {
             messageLabel.setText("Congratulations! You guessed the number.");
