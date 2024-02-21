@@ -9,8 +9,8 @@ public class GuessPanel extends JPanel {
     private JLabel attemptsLabel;
     private JTextField guessField;
 
-    private final Color buttonColor = new Color(0, 150, 136); // Teal
-    private final Color textColor = Color.BLACK;
+    private final Color buttonColor = new Color(254, 61, 15); // Teal
+    private final Color textColor = Color.BLACK; //Black
     private final Color successColor = new Color(76, 175, 80); // Green
     private final Color failureColor = new Color(244, 67, 54); // Red
 
