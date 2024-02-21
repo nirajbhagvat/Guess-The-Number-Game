@@ -21,7 +21,7 @@ This game is developed entirely in Java and utilizes the Swing library to provid
 7. Upon winning or running out of attempts, the game will prompt you to start a new game.
 
 ## Installation
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine. Or Download the Archieved file from the release and extract it.
 2. Open the project directory in your preferred Integrated Development Environment (IDE).
 3. Compile and run the main Java file (`GuessingGame.java`) to start the game.
 
